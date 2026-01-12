@@ -1,4 +1,4 @@
-# VR-Model-Performance-Analyzer
+# VR-Model-Performance-Analyzer [WIP]
 A data analysis tool that evaluates whether 3D models will perform well in a generic VR headset application
 
 The tool inspects geometry, materials, textures, and scene structure to estimate VR framerate, identify performance risks, and provide actionable optimization recommendations before runtime.
