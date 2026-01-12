@@ -9,7 +9,6 @@ from analysis.devices import DEVICE_PROFILES
 
 router = APIRouter()
 
-
 @router.post("/analyze/{device}")
 async def analyze_model(device: str, file: UploadFile = File(...)):
     profile = DEVICE_PROFILES[device]
