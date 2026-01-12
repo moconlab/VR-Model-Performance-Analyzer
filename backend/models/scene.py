@@ -5,17 +5,17 @@ from typing import List
 class Mesh(BaseModel):
     name: str
     triangle_count: int
-    instanced: bool = False
+    instanced: bool
 
 
-class Material(BaseModel):
+class MaterialInfo(BaseModel):
     name: str
     transparent: bool
-    texture_resolution: int  # max dimension (e.g. 2048)
+    texture_resolution: int
 
 
 class Scene(BaseModel):
     meshes: List[Mesh]
-    materials: List[Material]
+    materials: List[MaterialInfo]
     object_count: int
     lod_count: int
